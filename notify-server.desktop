@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Notify Server
+Comment=UDP server for displaying broadcast notifications
+Exec=notify-server
+Terminal=false
+Type=Application
+Categories=Network
