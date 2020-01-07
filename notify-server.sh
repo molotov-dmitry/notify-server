@@ -1,5 +1,11 @@
 #!/bin/bash
 
+while lsof -iUDP:14993 > /dev/null 
+do
+    echo 'Port already in use' >&2
+    sleep 5
+done
+
 while read -r message
 do
 	icon="$(echo "${message}" | cut -s -d ":" -f 1)"
